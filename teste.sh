@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Instalando pacotes básicos..."
-sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks
+sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak 
 
 echo "==> Ativando firewall (GUFW)..."
 sudo ufw default deny incoming
