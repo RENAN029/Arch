@@ -35,6 +35,12 @@ sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
 
+echo "==> Instalando Chaotic-AUR..."
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
+sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst"
+
 echo "==> Configurando /etc/pacman.conf..."
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
@@ -45,5 +51,5 @@ echo -e "[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -
 echo "==> Atualizando sistema e instalando microcódigo Intel..."
 sudo pacman -Syu --noconfirm intel-ucode
 
-echo "==> Script finalizado com sucesso!"
+echo "==> Script finalizado com sucesso; instale o nvm se quiser depois!"
 
