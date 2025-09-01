@@ -3,3 +3,4 @@ cd Arch
 chmod +x texte.sh
 ./teste.sh
 or setup2
+Kde-pacman -S flatpak 
