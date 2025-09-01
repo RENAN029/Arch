@@ -46,7 +46,7 @@ sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
-echo -e "[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
 echo "==> Atualizando sistema e instalando microcódigo Intel..."
 sudo pacman -Syu --noconfirm intel-ucode
