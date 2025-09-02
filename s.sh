@@ -20,8 +20,8 @@ rm -rf lucidglyph
 echo "==> Ativando firewall (GUFW)..."
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw enable
 sudo systemctl enable ufw
+sudo ufw enable
 
 echo "==> Instalando Chaotic-AUR..."
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
