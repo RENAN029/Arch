@@ -39,6 +39,6 @@ echo "==> Atualizando sistema e instalando microcódigo Intel..."
 sudo pacman -Syu --noconfirm intel-ucode
 sudo pacman -Scc --noconfirm
 
-echo "==> Script finalizado com sucesso; instale o nvm e o aur helper se quiser depois!"
+echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 
 
