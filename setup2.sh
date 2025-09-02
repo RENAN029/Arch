@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Removendo pacotes GNOME indesejados..."
-sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather epiphany htop vim
+sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts epiphany htop vim
 
 echo "==> Instalando pacotes básicos..."
 sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak
@@ -14,14 +14,6 @@ sudo ufw enable
 
 echo "==> Instalando pacotes multimídia..."
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav 
-
-echo "==> Instalando Shader Booster..."
-git clone https://github.com/psygreg/shader-patcherx.git
-cd shader-patcherx
-chmod +x patcher.sh
-./patcher.sh
-cd ..
-rm -rf shader-patcherx
 
 echo "==> Instalando LucidGlyph..."
 git clone https://github.com/maximilionus/lucidglyph.git
