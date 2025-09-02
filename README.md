@@ -2,8 +2,6 @@ git clone https://github.com/RENAN029/Arch.git
 
 cd Arch
 
-chmod +x t.sh
-
 ./t.sh
 
 or s
