@@ -7,11 +7,6 @@ sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnom
 echo "==> Instalando pacotes básicos..."
 sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak
 
-echo "==> Ativando firewall (GUFW)..."
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw enable
-
 echo "==> Instalando pacotes multimídia..."
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav 
 
@@ -21,6 +16,11 @@ cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
+
+echo "==> Ativando firewall (GUFW)..."
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw enable
 
 echo "==> Instalando Chaotic-AUR..."
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
