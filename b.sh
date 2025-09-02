@@ -17,6 +17,9 @@ chmod +x patcher.sh
 cd ..
 rm -rf shader-patcherx
 
+echo "==> Limpando Cache"
+sudo pacman -Scc --noconfirm
+
 echo "https://github.com/nvm-sh/nvm"
 cd ..
 rm -rf Arch
