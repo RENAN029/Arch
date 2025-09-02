@@ -17,6 +17,6 @@ chmod +x patcher.sh
 cd ..
 rm -rf shader-patcherx
 
-echo "==> Script finalizado com sucesso!"
+echo "https://github.com/nvm-sh/nvm"
 cd ..
 rm -rf Arch
