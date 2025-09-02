@@ -10,3 +10,6 @@ or setup2
 
 rm -rf Arch
 
+rm -rf pikaur
+
+rm -rf shader-patcherx
