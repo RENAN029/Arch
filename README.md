@@ -2,11 +2,11 @@ git clone https://github.com/RENAN029/Arch.git
 
 cd Arch
 
-chmod +x teste.sh
+chmod +x t.sh
 
-./teste.sh
+./t.sh
 
-or setup2
+or s
 
 rm -rf Arch
 
