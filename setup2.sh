@@ -15,14 +15,6 @@ sudo ufw enable
 echo "==> Instalando pacotes multimídia..."
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav 
 
-echo "==> Instalando pikaur..."
-sudo pacman -S --needed --noconfirm base-devel git
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -fsri --noconfirm
-cd ..
-rm -rf pikaur
-
 echo "==> Instalando Shader Booster..."
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx
@@ -53,6 +45,7 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 echo "==> Atualizando sistema e instalando microcódigo Intel..."
 sudo pacman -Syu --noconfirm intel-ucode
+sudo pacman -Scc --noconfirm
 
 echo "==> Script finalizado com sucesso; instale o nvm e o aur helper se quiser depois!"
 
