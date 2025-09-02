@@ -18,5 +18,5 @@ cd ..
 rm -rf shader-patcherx
 
 echo "==> Script finalizado com sucesso!"
-cd..
+cd ..
 rm -rf Arch
