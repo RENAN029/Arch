@@ -7,5 +7,6 @@ chmod +x teste.sh
 ./teste.sh
 
 or setup2
+
 rm -rf Arch
 
