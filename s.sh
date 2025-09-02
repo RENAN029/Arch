@@ -42,7 +42,3 @@ sudo pacman -Scc --noconfirm
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
 rm -rf Arch
-exit
-reboot 
-
-
