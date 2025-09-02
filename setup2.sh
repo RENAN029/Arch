@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Removendo pacotes GNOME indesejados..."
-sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather epiphany
+sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather epiphany htop vim
 
 echo "==> Instalando pacotes básicos..."
 sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak
