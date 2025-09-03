@@ -8,7 +8,7 @@ echo "==> Instalando pacotes multimídia..."
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav
 
 echo "==> Instalando pacotes básicos..."
-sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak
+sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak bashtop
 
 echo "==> Instalando LucidGlyph..."
 git clone https://github.com/maximilionus/lucidglyph.git
