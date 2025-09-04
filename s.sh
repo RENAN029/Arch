@@ -5,10 +5,10 @@ echo "==> Removendo pacotes GNOME indesejados..."
 sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts epiphany htop vim
 
 echo "==> Instalando pacotes multimídia..."
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav
+sudo pacman -S --noc0onfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav
 
 echo "==> Instalando pacotes básicos..."
-sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak bashtop
+sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak btop
 
 echo "==> Instalando LucidGlyph..."
 git clone https://github.com/maximilionus/lucidglyph.git
