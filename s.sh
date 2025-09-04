@@ -2,7 +2,7 @@
 set -e
 
 echo "==> Removendo pacotes GNOME indesejados..."
-sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts gnome-font-viewer epiphany  htop vim
+sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts gnome-font-viewer epiphany htop vim
 
 echo "==> Instalando pacotes multimídia..."
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
