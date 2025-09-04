@@ -2,13 +2,13 @@
 set -e
 
 echo "==> Removendo pacotes GNOME indesejados..."
-sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts epiphany htop vim
+sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts gnome-font-viewer epiphany  htop vim
 
 echo "==> Instalando pacotes multimídia..."
-sudo pacman -S --noc0onfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav
+sudo pacman -S --noc0onfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
 echo "==> Instalando pacotes básicos..."
-sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak btop
+sudo pacman -S --noconfirm nano git fastfetch gufw noto-fonts-cjk fwupd gnome-tweaks flatpak btop intel-ucode
 
 echo "==> Instalando LucidGlyph..."
 git clone https://github.com/maximilionus/lucidglyph.git
@@ -37,7 +37,7 @@ sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
 echo "==> Atualizando sistema e instalando microcódigo Intel..."
-sudo pacman -Syu --noconfirm intel-ucode
+sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
