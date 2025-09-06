@@ -1,4 +1,3 @@
-#!/bin/bash
 set -e
 
 sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts gnome-characters epiphany htop vim
@@ -12,10 +11,6 @@ cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
-
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo systemctl enable ufw
 
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
