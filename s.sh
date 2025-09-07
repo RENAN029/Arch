@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -Rsnu --noconfirm gnome-extra gnome-music gnome-maps gnome-tour gnome-weather gnome-user-docs gnome-contacts yelp snapshot epiphany htop vim
+sudo pacman -Rsnu --noconfirm gnome-extra gnome-user-docs gnome-music gnome-maps gnome-tour gnome-weather gnome-contacts gnome-calculator sushi yelp snapshot simple-scan evince epiphany htop vim
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
