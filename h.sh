@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility gnome-system-monitor
+sudo pacman -S --noconfirm kitty rofi waybar  gnome-software gnome-disk-utility gnome-system-monitor
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
