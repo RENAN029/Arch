@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 
 sudo pacman -S --noconfirm gdm nautilus nano btop fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2
 
-systemctl enable gdm
+systemctl enable gdm.service
 
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
