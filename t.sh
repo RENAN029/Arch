@@ -13,8 +13,6 @@ sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
 
-
-
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
