@@ -18,7 +18,7 @@ sudo sed -i 's/trixie/testing/g' /etc/apt/sources.list
 
 sudo apt full-upgrade -y
 sudo autoremove --purge -y
-sudo apt clean
+sudo apt clean -y
 
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
