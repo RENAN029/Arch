@@ -1,10 +1,10 @@
 set -e
 
-sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-keyring gnome-disk-utility
+sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-system-monitor gnome-disk-utility
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
-sudo pacman -S --noconfirm gdm nautilus nano btop fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2
+sudo pacman -S --noconfirm gdm nvidia-open nano fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2
 
 systemctl enable gdm.service
 
