@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
-sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch ufw noto-fonts-cjk fwupd flatpak btop yt-dlp aria2
+sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch gufw noto-fonts-cjk fwupd flatpak btop yt-dlp aria2
 
 systemctl enable gdm
 git clone https://github.com/maximilionus/lucidglyph.git
