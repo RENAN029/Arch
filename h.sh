@@ -1,10 +1,10 @@
 set -e
 
-sudo pacman -S --noconfirm hyprland nautilus rofi waybar kitty gnome-software gnome-disk-utility btop
+sudo pacman -S --noconfirm hyprland nautilus rofi waybar kitty gnome-software gnome-disk-utility
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
-sudo pacman -S --noconfirm ly nvidia-open nano fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2
+sudo pacman -S --noconfirm ly btop nvidia-open nano fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2
 
 systemctl enable ly 
 git clone https://github.com/maximilionus/lucidglyph.git
