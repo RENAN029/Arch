@@ -6,8 +6,6 @@ chmod +x b.sh
 
 ./b.sh
 
-or s
-
 --downloader aria2c
 
 Sudo pacman -Syu
