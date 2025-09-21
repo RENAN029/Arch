@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland nautilus rofi waybar kit
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer swaync
 
-sudo pacman -S --noconfirm btop nvidia-open nano fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2 hyprlock
+sudo pacman -S --noconfirm btop nvidia-open nano fastfetch gufw noto-fonts-cjk fwupd flatpak intel-ucode yt-dlp aria2 hyprshot
 
 systemctl enable lightdm
 git clone https://github.com/maximilionus/lucidglyph.git
