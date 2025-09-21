@@ -12,7 +12,7 @@ Sudo pacman -Syu
 
 Sudo pacman -Scc
 
-Sudo pacman -Syu $(pacman -Qnq) || Sudo pacman -Rsnu $(pacman -Qdtq)
+Sudo pacman -Syu $(pacman -Qnq) Sudo pacman -Rsnu $(pacman -Qdtq)
 
 Sudo pacman -S || Sudo pacman -Rsnu
 
