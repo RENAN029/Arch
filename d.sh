@@ -1,8 +1,8 @@
 set -e
 
-sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utilityy 
+sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamerg
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch gufw noto-fonts-cjk fwupd flatpak btop yt-dlp aria2
 
