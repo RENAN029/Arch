@@ -23,6 +23,3 @@ https://github.com/AlvaroParker/config
 https://github.com/typecraft-dev/dotfiles
 
 https://github.com/Matt-FTW/dotfiles #AppIndicator and KStatusNotifierItem Support Clipboard Indicator Dash to Dock GSConnect
-
-
-
