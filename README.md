@@ -22,4 +22,4 @@ Sudo pacman -Rsnu
 
 https://github.com/typecraft-dev/dotfiles https://github.com/marcusmix/dotfiles/
 
-AppIndicator and KStatusNotifierItem Support # Clipboard Indicator # Dash to Dock # GSConnect
+AppIndicator and KStatusNotifierItem Support # Clipboard Indicator # Dash to Dock # GSConnect # ttf-jetbrains-mono
