@@ -22,7 +22,7 @@ https://github.com/AlvaroParker/config
 
 https://github.com/typecraft-dev/dotfiles
 
-https://github.com/Matt-FTW/dotfiles #essa e o rofi os outros 3 sao waybar AppIndicator and KStatusNotifierItem Support Clipboard Indicator Dash to Dock GSConnect
+https://github.com/Matt-FTW/dotfiles #AppIndicator and KStatusNotifierItem Support Clipboard Indicator Dash to Dock GSConnect
 
 
 
