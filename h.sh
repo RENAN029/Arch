@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland nautilus rofi waybar kitty gnome-software gnome-disk-utility hyprpicker
+sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland nautilus wofi waybar kitty gnome-software gnome-disk-utility hyprpicker
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer swaync
 
