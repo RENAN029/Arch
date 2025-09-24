@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -S --noconfirm ly hyprland kitty wofi waybar nano superfile cfdisk ttf-jetbrains-mono-nerd swaync hyprpicker 
+sudo pacman -S --noconfirm ly hyprland kitty wofi waybar nano superfile clipse ttf-jetbrains-mono-nerd swaync hyprpicker 
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 
