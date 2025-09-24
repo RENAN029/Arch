@@ -1,12 +1,14 @@
 set -e
 
-sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland nautilus kitty wofi waybar gnome-software gnome-disk-utility nano
+sudo pacman -S --noconfirm ly hyprland kitty wofi waybar nano nnn cfdisk ttf-jetbrains-mono-nerd clipse swaync hyprpicker
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 
 sudo pacman -S --noconfirm intel-ucode nvidia-open fwupd flatpak fastfetch btop ufw noto-fonts-cjk yt-dlp aria2 hyprpaper
 
-systemctl enable lightdm
+flatpak bazar
+
+systemctl enable ly
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
