@@ -1,10 +1,10 @@
 set -e
 
-sudo pacman -S --noconfirm ly hyprland kitty wofi waybar nano superfile clipse ttf-jetbrains-mono-nerd swaync hyprpicker 
+sudo pacman -S --noconfirm ly hyprland kitty wofi waybar nano superfile aria2 ttf-jetbrains-mono-nerd swaync hyprpicker 
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 
-sudo pacman -S --noconfirm intel-ucode nvidia-open fwupd flatpak fastfetch btop ufw noto-fonts-cjk yt-dlp aria2 hyprpaper
+sudo pacman -S --noconfirm intel-ucode nvidia-open fwupd flatpak fastfetch btop ufw noto-fonts-cjk yt-dlp ncdu hyprpaper
 
 flatpak install -y flathub io.github.kolunmi.Bazaar
 
