@@ -1,12 +1,12 @@
 set -e
-sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland kitty wofi waybar nano superfile ttf-firacode-nerd xdg-desktop-portal-hyprland swaync
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software ncdu 
+sudo pacman -S --noconfirm hyprland kitty wofi waybar superfile uwsm xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent
 
-sudo pacman -S --noconfirm intel-ucode nvidia-open fwupd flatpak fastfetch btop ufw noto-fonts-cjk yt-dlp aria2 hyprpaper xdg-user-dirs uwsm
- 
-xdg-user-dirs-update
-systemctl enable lightdm
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer discover
+
+sudo pacman -S --noconfirm ly nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpaper 
+
+systemctl enable gdm
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
