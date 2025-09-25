@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 
 sudo pacman -S --noconfirm intel-ucode nvidia-open fwupd flatpak fastfetch btop ufw noto-fonts-cjk yt-dlp aria2 hyprpaper
 
-flatpak install -y flathub io.github.kolunmi.Bazaar
+flatpak install -y flathub io.github.kolunmi.Bazaar io.github.zen_browser.zen org.onlyoffice.desktopeditors com.vysp3r.ProtonPlus
 xdg-user-dirs-update
 systemctl enable ly
 
