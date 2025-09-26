@@ -1,8 +1,8 @@
 set -e
 
-sudo pacman -S --noconfirm hyprland kitty wofi waybar superfile xdg-user-dirs hyprpolkitagent xdg-desktop-portal-hyprland ttf-firacode-nerd    
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software ncdu  
-sudo pacman -S --noconfirm ly uwsm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpaper swaync  
+sudo pacman -S --noconfirm ly uwsm hyprland kitty wofi waybar xdg-user-dirs hyprpolkitagent xdg-desktop-portal-hyprland ttf-firacode-nerd    
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software  
+sudo pacman -S --noconfirm nvidia-open intel-ucode superfile nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpaper   
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
