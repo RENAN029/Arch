@@ -1,6 +1,6 @@
 set -e
 
-sudo pacman -S --noconfirm ly hyprland kitty wofi waybar duperfile dunst xdg-desktop-portal-hyprland hyprpolkitagent dunst
+sudo pacman -S --noconfirm ly hyprland kitty wofi waybar superfile dunst xdg-desktop-portal-hyprland hyprpolkitagent dunst
 
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 
