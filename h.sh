@@ -1,10 +1,10 @@
 set -e
 
-sudo pacman -S --noconfirm ly hyprland kitty wofi waybar superfile dunst xdg-desktop-portal-hyprland hyprpolkitagent dunst slurp
+sudo pacman -S --noconfirm ly hyprland kitty wofi waybar superfile xdg-desktop-portal-hyprland hyprpolkitagent xdg-user-dirs 
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer discover
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 
-sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 grim
+sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 
 
 systemctl enable ly
 git clone https://github.com/maximilionus/lucidglyph.git
