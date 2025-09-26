@@ -2,7 +2,7 @@ set -e
 
 sudo pacman -S --noconfirm ly hyprland kitty wofi waybar superfile xdg-desktop-portal-hyprland hyprpolkitagent xdg-user-dirs 
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer dunst 
 
 sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 
 
