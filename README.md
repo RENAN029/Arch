@@ -6,20 +6,20 @@ chmod +x b.sh
 
 ./b.sh
 
-Sudo pacman -Syu 
+sudo pacman -Syu 
 
 --downloader aria2c
 
-Sudo pacman -Scc
+sudo pacman -Scc
 
-Sudo pacman -Syu $(pacman -Qnq) 
+sudo pacman -Syu $(pacman -Qnq) 
 
-Sudo pacman -Rsnu $(pacman -Qdtq)
+sudo pacman -Rsnu $(pacman -Qdtq)
 
-Sudo pacman -S 
+sudo pacman -S 
 
-Sudo pacman -Rsnu
+sudo pacman -Rsnu
 
-https://github.com/typecraft-dev/dotfiles https://github.com/marcusmix/dotfiles/
+https://github.com/typecraft-dev/dotfiles sudo pacman -S bc calcurse feh taskwarrior-tui ncdu 
 
 AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
