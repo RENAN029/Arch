@@ -1,8 +1,10 @@
 set -e
 
-sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland kitty wofi ncdu hyprpaper hyprpolkitagent xdg-desktop-portal-hyprland ttf-firacode-nerd    
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software nautilus 
-sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 swaync hyprshot waybar 
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software hyprland    
+sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode superfile micro fastfetch btop gufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpaper
+sudo pacman -S --noconfirm ly hyprshot ncdu swaync kitty wofi waybar hyprpolkitagent xdg-desktop-portal-hyprland xdg-user-dirs ttf-firacode-nerd 
+
+systemctl enable ly
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
@@ -13,6 +15,7 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst"
+
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
@@ -21,6 +24,7 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
+
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
 rm -rf Arch
