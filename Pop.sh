@@ -1,12 +1,11 @@
 set -e
 
-sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
+sudo pacman -S --noconfirm hyprland kitty wofi waybar micro superfile swaync hyprpaper hyprshot gnome-software calcurse    
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
+sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode ncdu fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2
+sudo pacman -S --noconfirm lightdm-gtk-greeter hyprpolkitagent xdg-desktop-portal-hyprland xdg-user-dirs ttf-firacode-nerd 
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
-
-sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch btop gufw noto-fonts-cjk fwupd flatpak yt-dlp aria2
-
-systemctl enable gdm
+systemctl enable lightdm
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
@@ -25,6 +24,7 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
+
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
 rm -rf Arch
