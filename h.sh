@@ -1,7 +1,7 @@
 set -e
 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software hyprpicker    
-sudo pacman -S --noconfirm ly uwsm nvidia-open intel-ucode superfile micro fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpaper
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer gnome-software hyprpaper    
+sudo pacman -S --noconfirm ly uwsm nvidia-open intel-ucode superfile nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprpicker
 sudo pacman -S --noconfirm hyprshot swaync kitty wofi waybar hyprpolkitagent xdg-desktop-portal-hyprland xdg-user-dirs ttf-firacode-nerd hyprland
 
 systemctl enable ly
