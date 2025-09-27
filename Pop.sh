@@ -1,8 +1,8 @@
 set -e
 
-sudo pacman -S --noconfirm hyprland kitty wofi waybar micro superfile swaync hyprpaper hyprshot gnome-software calcurse    
+sudo pacman -S --noconfirm hyprland kitty wofi waybar superfile ncdu feh swaync hyprpaper hyprshot gnome-software calcurse    
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode ncdu fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2
+sudo pacman -S --noconfirm uwsm nvidia-open intel-ucode micro fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2
 sudo pacman -S --noconfirm lightdm-gtk-greeter hyprpolkitagent xdg-desktop-portal-hyprland xdg-user-dirs ttf-firacode-nerd 
 
 systemctl enable lightdm
