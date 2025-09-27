@@ -3,7 +3,7 @@ set -e
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw
-sudo ufw enable
+sudo ufw enablep
 
 sudo pacman -S --needed --noconfirm base-devel git
 git clone https://aur.archlinux.org/pikaur.git
