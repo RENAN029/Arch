@@ -3,7 +3,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm lightdm-gtk-greeter hyprland uwsm kitty wofi waybar superfile swaync hyprpaper hyprpicker hyprshot hyprpolkitagent xdg-user-dirs     
 sudo pacman -S --noconfirm nvidia-open intel-ucode nano fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 xdg-desktop-portal-hyprland calcurse 
 
-systemctl enable ly
+systemctl enable lightdm
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
