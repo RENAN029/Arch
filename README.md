@@ -20,6 +20,4 @@ sudo pacman -S
 
 sudo pacman -Rsnu
 
-https://github.com/typecraft-dev/dotfiles sudo pacman -S taskwarrior-tui ncdu 
-
-AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
+https://github.com/typecraft-dev/dotfiles; AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
