@@ -1,4 +1,5 @@
 set -e
+
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer xdg-desktop-portal-hyprland  
 sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprland hyprpaper hyprpicker    
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs hyprpolkitagent ttf-firacode-nerd uwsm kitty wofi waybar superfile swaync hyprshot feh
