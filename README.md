@@ -8,7 +8,7 @@ chmod +x b.sh
 
 sudo pacman -Syu 
 
---downloader aria2c
+--downloader aria2c noto-fonts packege
 
 sudo pacman -Scc
 
