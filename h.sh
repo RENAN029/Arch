@@ -1,7 +1,8 @@
 set -e
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer xdg-desktop-portal-hyprland  
-sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw noto-fonts-cjk fwupd flatpak yt-dlp aria2 hyprland hyprpaper hyprpicker    
-sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs hyprpolkitagent ttf-firacode-nerd uwsm kitty wofi waybar superfile swaync hyprshot feh
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer xdg-desktop-portal-hyprland
+sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-firacode-nerd
+sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprland hyprpaper hyprpicker    
+sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs hyprpolkitagent  uwsm kitty wofi waybar superfile swaync hyprshot feh
 flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen org.onlyoffice.desktopeditors com.valvesoftware.Steam com.vysp3r.ProtonPlus
 
 systemctl enable lightdm
