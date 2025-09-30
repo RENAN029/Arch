@@ -1,8 +1,8 @@
 set -e
-
+sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
-sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch btop gufw noto-fonts-cjk fwupd flatpak yt-dlp aria2
+sudo pacman -S --noconfirm gdm nvidia-open intel-ucode nano fastfetch btop gufw fwupd flatpak yt-dlp aria2
 
 systemctl enable gdm
 git clone https://github.com/maximilionus/lucidglyph.git
