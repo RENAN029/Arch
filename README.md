@@ -23,3 +23,5 @@ sudo pacman -Rsnu
 https://github.com/typecraft-dev/dotfiles sudo pacman -S bc ncdu cmus calcurse taskwarrior
 
 AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
+
+As linhas de instalacao devem ter no maximo 1 de diferenca, podendo ir diminuindo ou aumentando de 1 em 1 tendo base os pacotes fontes e codecs
