@@ -20,7 +20,7 @@ sudo pacman -S
 
 sudo pacman -Rsnu
 
-https://github.com/typecraft-dev/dotfiles sudo pacman -S bc ncdu cmus calcurse taskwarrior
+https://github.com/typecraft-dev/dotfiles sudo pacman -S bc ncdu termusic taskwarrior
 
 AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
 
