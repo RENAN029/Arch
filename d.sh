@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git nano fastfetch btop gufw fwupd flatpak yt-dlp aria2 gamemode 
 
-systemctl enable gdm gamemode
+systemctl enable gdm 
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
