@@ -1,9 +1,10 @@
 set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprland hyprpaper hyprpicker    
-sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs hyprpolkitagent  uwsm kitty wofi waybar superfile swaync hyprshot feh xdg-desktop-portal-hyprland
-flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen org.onlyoffice.desktopeditors com.valvesoftware.Steam com.vysp3r.ProtonPlus
+sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty wofi waybar superfile gamemode earlyoom ffmpegthumbnailer
+sudo pacman -S --noconfirm nvidia-open intel-ucode git micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprshot ncdu
+sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync feh 
+flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen org.onlyoffice.desktopeditors com.vysp3r.ProtonPlus
 
 systemctl enable lightdm
 git clone https://github.com/maximilionus/lucidglyph.git
