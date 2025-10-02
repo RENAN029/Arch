@@ -1,5 +1,5 @@
 set -e
-sudo pacman -S earlyoom ffpegthumbnailer
+sudo pacman -S earlyoom ffpegthumbnailer nix
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw
