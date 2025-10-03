@@ -4,8 +4,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty wofi waybar superfile gamemode earlyoom ffmpegthumbnailer
 sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprshot calcurse
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync feh 
-flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen org.onlyoffice.desktopeditors com.vysp3r.ProtonPlus
-
+ 
 systemctl enable lightdm
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
@@ -17,6 +16,7 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst"
+flatpak install -y flathub io.github.kolunmi.Bazaar
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
