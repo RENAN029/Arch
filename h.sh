@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty wofi waybar super
 sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprshot calcurse
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync feh 
  
-systemctl enable lightdm
+systemctl enable lightdm earlyoom
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
