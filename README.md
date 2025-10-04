@@ -20,7 +20,7 @@ sudo pacman -S
 
 sudo pacman -Rsnu
 
-https://github.com/typecraft-dev/dotfiles/tree/master https://github.com/FernuDev/Hypr-dotfiles https://github.com/FernuDev/Hypr-dotfiles/tree/main sudo pacman -S bc ncdu termusic taskwarrior
+https://github.com/typecraft-dev/dotfiles/tree/master https://github.com/FernuDev/Hypr-dotfiles https://github.com/FernuDev/Hypr-dotfiles/tree/main https://github.com/DoubleDotStudios/dotfiles-old sudo pacman -S bc ncdu termusic taskwarrior
 
 AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
 
