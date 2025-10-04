@@ -20,7 +20,7 @@ sudo pacman -S
 
 sudo pacman -Rsnu
 
-https://github.com/sonnybox/yt-files/blob/main/SIMPLE%20LAUNCHER/config.rasi https://github.com/FernuDev/Hypr-dotfiles sudo pacman -S bc ncdu termusic taskwarrior
+https://github.com/typecraft-dev/dotfiles/tree/master https://github.com/FernuDev/Hypr-dotfiles https://github.com/FernuDev/Hypr-dotfiles/tree/main sudo pacman -S bc ncdu termusic taskwarrior
 
 AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
 
