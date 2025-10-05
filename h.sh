@@ -6,6 +6,7 @@ sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwup
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync feh 
  
 systemctl enable lightdm earlyoom
+systemctl --user enable --now hyprpolkitagent.service
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
@@ -22,7 +23,6 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
