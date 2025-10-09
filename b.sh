@@ -1,8 +1,7 @@
 set -e
-sudo pacman -S --noconfirm earlyoom ffmpegthumbnailer
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo systemctl enable ufw earlyoom
+sudo systemctl enable ufw 
 sudo ufw enable
 
 sudo pacman -S --needed --noconfirm base-devel git
@@ -12,6 +11,7 @@ makepkg -fsri --noconfirm
 cd ..
 rm -rf pikaur
 
+sudo pacman -S --noconfirm gamemode ffmpegthumbnailer
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx
 chmod +x patcher.sh
