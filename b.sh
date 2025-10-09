@@ -1,8 +1,8 @@
 set -e
-
+sudo pacman -S --noconfirm earlyoom ffmpegthumbnailer
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo systemctl enable ufw
+sudo systemctl enable ufw earlyoom
 sudo ufw enable
 
 sudo pacman -S --needed --noconfirm base-devel git
