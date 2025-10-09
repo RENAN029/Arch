@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git micro fastfetch btop gufw fwupd flatpak yt-dlp aria2 gamemode 
 
-systemctl enable gdm earlyoom
+systemctl enable gdm 
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
@@ -16,7 +16,6 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst"
-sudo pacman -S --noconfirm earlyoom ffmpegthumbnailer
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
