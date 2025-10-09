@@ -1,8 +1,8 @@
 set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty wofi waybar superfile gamemode earlyoom ffmpegthumbnailer 
-sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop ufw fwupd flatpak yt-dlp aria2 hyprshot calcurse
+sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty wofi waybar superfile gamemode mplayer termusic gufw feh
+sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop git fwupd flatpak yt-dlp aria2 hyprshot calcurse
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm dunst 7zip
  
 systemctl enable lightdm earlyoom
@@ -17,7 +17,7 @@ sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst"
-flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen; sudo pacman -S termusic git
+flatpak install -y flathub io.github.kolunmi.Bazaar app.zen_browser.zen;  
 sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
