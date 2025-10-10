@@ -25,6 +25,6 @@ sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper(swaync) se quiser depois!"
+echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
 rm -rf Arch
