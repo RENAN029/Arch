@@ -3,7 +3,7 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker kitty rofi waybar superfile earlyoom mplayer termusic gufw feh
 sudo pacman -S --noconfirm nvidia-open intel-ucode git micro fastfetch btop fwupd flatpak yt-dlp aria2 hyprshot calcurse
-sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync bc
+sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm presenterm
  
 systemctl enable lightdm earlyoom
 systemctl --user enable hyprpolkitagent.service
@@ -25,6 +25,6 @@ sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
+echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper(swaync) se quiser depois!"
 cd ..
 rm -rf Arch
