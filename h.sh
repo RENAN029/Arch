@@ -1,9 +1,9 @@
 set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker hypridle kitty rofi waybar superfile mpv earlyoom termusic gufw 
+sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker hypridle hyprsunset kitty rofi waybar superfile mpv earlyoom termusic 
 sudo pacman -S --noconfirm nvidia-open intel-ucode micro fastfetch btop fwupd flatpak yt-dlp aria2 hyprshot calcurse feh
-sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm presenterm 
+sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm swaync ufw
  
 systemctl enable lightdm earlyoom
 systemctl --user enable hyprpolkitagent.service
