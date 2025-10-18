@@ -3,6 +3,7 @@ set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm sddm-kcm plasma-desktop dolphin konsole discover kscreen plasma-nm plasma-pa partitionmanager
+sudo pacman -S --noconfirm bluedevil kdeconnect
 sudo pacman -S --noconfirm ark nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
 
 systemctl enable sddm earlyoom
@@ -25,6 +26,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> Script finalizado com sucesso; instale o nvm, bluedevil, kdeconnect, shader booster e o aur helper se quiser depois!"
+echo "==> Script finalizado com sucesso; instale o nvm, shader booster e o aur helper se quiser depois!"
 cd ..
 rm -rf Arch
