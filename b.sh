@@ -1,15 +1,10 @@
 set -e
+sudo pacman -S nix
+
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw 
 sudo ufw enable
-
-sudo pacman -S --needed --noconfirm base-devel git
-git clone https://aur.archlinux.org/pikaur.git
-cd pikaur
-makepkg -fsri --noconfirm
-cd ..
-rm -rf pikaur
 
 sudo pacman -S --noconfirm gamemode ffmpegthumbnailer
 git clone https://github.com/psygreg/shader-patcherx.git
