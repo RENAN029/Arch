@@ -1,6 +1,5 @@
 set -e
 sudo pacman -S nix
-
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw 
@@ -15,6 +14,7 @@ cd ..
 rm -rf shader-patcherx
 
 sudo pacman -Scc --noconfirm
+sudo pacman -Syu --noconfirm
 echo "https://github.com/nvm-sh/nvm"
 cd ..
 rm -rf Arch
