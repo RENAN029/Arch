@@ -1,11 +1,11 @@
 set -e
-
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm sddm-kcm plasma-desktop dolphin konsole discover kscreen plasma-nm plasma-pa partitionmanager
 sudo pacman -S --noconfirm ark nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
 
 systemctl enable sddm earlyoom
+sudo pacman -S --noconfirm gamemode
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
