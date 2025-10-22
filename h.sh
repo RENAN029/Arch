@@ -6,13 +6,13 @@ sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-
 sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker hypridle libqalculate kitty waybar superfile hyprshot calcurse 
  
 systemctl enable lightdm earlyoom
+sudo pacman -S --noconfirm gamemode
 systemctl --user enable hyprpolkitagent.service
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
-
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
