@@ -5,7 +5,7 @@ sudo ufw default allow outgoing
 sudo systemctl enable ufw 
 sudo ufw enable
 
-sudo pacman -S nix ffmpegthumbnailer
+sudo pacman -S nix ffmpegthumbnailer dnsmasq curl docker
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx
 chmod +x patcher.sh
