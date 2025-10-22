@@ -14,7 +14,7 @@ rm -rf shader-patcherx
 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "dow: nvm; ffmpegthumbnailer; dnsmasq; curl; docker"
+echo "go: nvm; ffmpegthumbnailer; dnsmasq; curl; docker"
 
 cd ..
 rm -rf Arch
