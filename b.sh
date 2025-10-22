@@ -1,11 +1,10 @@
 set -e
-sudo pacman -S nix
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw 
 sudo ufw enable
 
-sudo pacman -S --noconfirm gamemode ffmpegthumbnailer
+sudo pacman -S nix ffmpegthumbnailer
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx
 chmod +x patcher.sh
