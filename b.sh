@@ -14,7 +14,7 @@ rm -rf shader-patcherx
 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "Tudo finalizado, sistema pronto para uso"
+echo "Sistema configurado GO"
 
 cd ..
 rm -rf Arch
