@@ -14,7 +14,7 @@ rm -rf shader-patcherx
 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "=> zen; hydra; office"
+echo "==> zen; hydra; office"
 
 cd ..
 rm -rf Arch
