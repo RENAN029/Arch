@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-browser-integration plasma-firewall kde-gtk-config   
 sudo pacman -S --noconfirm sddm-kcm ark dolphin konsole discover kscreen partitionmanager kdeconnect bluedevil spectacle            
 sudo pacman -S --noconfirm nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak-kcm yt-dlp aria2 earlyoom
-echo "=> plasma-vault; plasma-systemmonitor; print-manager; ffmpegthumbs; dolphin-plugins"
+
 systemctl enable sddm earlyoom
 sudo pacman -S --noconfirm gamemode fuse
 git clone https://github.com/maximilionus/lucidglyph.git
@@ -22,7 +22,7 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-
+echo "==> plasma-vault; plasma-systemmonitor; plasma-thunderbolt; oxygen; print-manager; ffmpegthumbs; dolphin-plugins"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 
