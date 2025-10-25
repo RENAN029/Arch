@@ -3,7 +3,6 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git helix fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom
-echo "==> nix; oh-my-bash; nvm; ffmpegthumbnailer; dnsmasq; curl; docker; topgrade;  gnome-system-monitor"
 
 systemctl enable gdm earlyoom
 sudo pacman -S --noconfirm gamemode fuse
@@ -26,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "=> nix; oh-my-bash; nvm; ffmpegthumbnailer; dnsmasq; curl; docker; topgrade; gnome-system-monitor"
+echo "==> nix; oh-my-bash; nvm; ffmpegthumbnailer; dnsmasq; curl; docker; topgrade; gnome-keyring; gnome-system-monitor"
 cd ..
 rm -rf Arch
