@@ -8,8 +8,6 @@ chmod +x b.sh
 
 sudo pacman -Syu 
 
---downloader aria2c noto-fonts packege
-
 sudo pacman -Scc
 
 sudo pacman -Syu $(pacman -Qnq) 
@@ -20,16 +18,8 @@ sudo pacman -S
 
 sudo pacman -Rsnu
 
-https://github.com/typecraft-dev/dotfiles/tree/master https://github.com/FernuDev/Hypr-dotfiles https://github.com/FernuDev/Hypr-dotfiles/tree/main https://github.com/DoubleDotStudios/dotfiles-old sudo pacman -S bc ncdu termusic taskwarrior
+Extensões: AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect; User Themes; Shell
 
-AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect
-
-As linhas de instalacao devem ter no maximo 1 de diferenca, podendo ir diminuindo ou aumentando de 1 em 1 tendo base os pacotes fontes e codecs
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-set -e
-sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom rofi 
 sudo pacman -S --noconfirm lightdm-gtk-greeter xdg-user-dirs xdg-desktop-portal-hyprland hyprpolkitagent uwsm hyprsunset
+
 sudo pacman -S --noconfirm hyprland hyprpaper hyprpicker hypridle libqalculate kitty waybar superfile hyprshot calcurse 
