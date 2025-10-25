@@ -25,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> nix; oh-my-bash; nvm; ffmpegthumbnailer; dnsmasq; curl; docker; topgrade; gnome-keyring; gnome-system-monitor"
+echo "==> nix; ffmpegthumbnailer; dnsmasq; curl; docker; topgrade; gnome-keyring; gnome-user-share gnome-system-monitor"
 cd ..
 rm -rf Arch
