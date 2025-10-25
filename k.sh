@@ -23,8 +23,8 @@ sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
-echo "==> Script finalizado; Instale: plasma-vault; plasma-systemmonitor; print-manager; ffmpegthumbs; dolphin-plugins"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
+echo "==> Script finalizado; Instale: plasma-vault; plasma-systemmonitor; print-manager; ffmpegthumbs; dolphin-plugins"
 cd ..
 rm -rf Arch
