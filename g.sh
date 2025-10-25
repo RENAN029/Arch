@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git helix fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom
 
 systemctl enable gdm earlyoom
-sudo pacman -S --noconfirm gamemode
+sudo pacman -S --noconfirm gamemode fuse
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
