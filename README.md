@@ -6,10 +6,20 @@ chmod +x b.sh
 
 ./b.sh
 
-sudo pacman -Syu | sudo pacman -Scc
+sudo pacman -Syu  
 
-sudo pacman -Syu $(pacman -Qnq) | sudo pacman -Rsnu $(pacman -Qdtq)
+sudo pacman -Scc
 
-sudo pacman -S | sudo pacman -Rsnu
+sudo pacman -Syu $(pacman -Qnq) 
+
+sudo pacman -Rsnu $(pacman -Qdtq)
+
+sudo pacman -S 
+
+sudo pacman -Rsnu
 
 Extensões: AppIndicator and KStatusNotifierItem Support; Clipboard Indicator; Dash to Dock; GSConnect; User Themes; Shell
+
+nix-env -e 
+
+nix-env -iA 
