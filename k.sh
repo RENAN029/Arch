@@ -6,8 +6,8 @@ sudo pacman -S --noconfirm sddm-kcm ark dolphin konsole discover kscreen partiti
 sudo pacman -S --noconfirm nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak-kcm yt-dlp aria2 earlyoom
 
 sudo pacman -S --noconfirm gamemode fuse curl apparmor
-systemctl enable sddm earlyoom apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
+systemctl enable sddm earlyoom apparmor
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
