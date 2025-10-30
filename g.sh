@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git helix fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom
 
-sudo pacman -S --noconfirm gamemode fuse curl apparmor
+sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
 systemctl enable gdm earlyoom apparmor
 cd lucidglyph
@@ -25,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> nix; nvm; ffmpegthumbnailer; dnsmasq; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
+echo "==> nix; nvm; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
 cd ..
 rm -rf Arch
