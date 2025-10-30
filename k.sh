@@ -5,8 +5,8 @@ sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-browser-int
 sudo pacman -S --noconfirm sddm-kcm ark dolphin konsole discover kscreen partitionmanager kdeconnect bluedevil spectacle            
 sudo pacman -S --noconfirm nvidia-open intel-ucode git helix fastfetch btop ufw fwupd flatpak-kcm yt-dlp aria2 earlyoom
 
-systemctl enable sddm earlyoom
-sudo pacman -S --noconfirm gamemode fuse
+sudo pacman -S --noconfirm gamemode fuse curl apparmor
+systemctl enable sddm earlyoom apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
 cd lucidglyph
 sudo ./lucidglyph.sh install
