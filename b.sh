@@ -5,10 +5,15 @@ sudo ufw default allow outgoing
 sudo systemctl enable ufw 
 sudo ufw enable
 
+sudo ufw allow 1714:1764/udp
+sudo ufw allow 1714:1764/tcp
+sudo ufw reload
+
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx
 chmod +x patcher.sh
 ./patcher.sh
+
 cd ..
 rm -rf shader-patcherx
 
