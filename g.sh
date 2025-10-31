@@ -6,7 +6,7 @@ sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git helix fastfetch btop 
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable gdm earlyoom apparmor
+systemctl enable gdm earlyoom dnsmasq apparmor
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
