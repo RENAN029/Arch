@@ -19,7 +19,7 @@ rm -rf shader-patcherx
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 
-echo "==> zen; hydra; office"
+echo "FIM"
 
 cd ..
 rm -rf Arch
