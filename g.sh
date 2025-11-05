@@ -20,7 +20,6 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-sudo pacman -S --noconfirm gnome-shell-extension-dash-to-dock gnome-shell-extension-gsconnect gnome-shell-extension-appindicator
 echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
