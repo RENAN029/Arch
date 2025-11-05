@@ -3,8 +3,7 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git helix fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom
-
-sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
+sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
 systemctl enable gdm earlyoom dnsmasq apparmor
 cd lucidglyph
@@ -21,7 +20,7 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-
+sudo pacman -S --noconfirm gnome-shell-extension-dash-to-dock gnome-shell-extension-gsconnect gnome-shell-extension-appindicator
 echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
