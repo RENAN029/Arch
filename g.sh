@@ -23,7 +23,7 @@ sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
 echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; bc"
-echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; clamav; gnome-system-monitor"
+echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; goverlay; clamav; gnome-system-monitor"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 cd ..
