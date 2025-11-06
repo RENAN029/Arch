@@ -22,7 +22,7 @@ sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
-echo "==>Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; cov"
+echo "==>Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; Use"
 echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
