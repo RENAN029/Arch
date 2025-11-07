@@ -21,6 +21,7 @@ while true; do
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
     case $choice in
+    
         1) 
             curl -fsSL https://install.danklinux.com | sh
             break
@@ -30,15 +31,13 @@ while true; do
             break
             ;;
         3) 
-            sudo pacman -S --noconfirm fish
-            git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
-            ~/.local/share/caelestia/install.fish
+            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
             break
             ;;
         4) 
-            curl -L https://raw.githubusercontent.com/HyDE-Project/HyDE/main/Scripts/hydevm/hydevm.sh -o hydevm
-            chmod +x hydevm
-            ./hydevm
+            sudo pacman -S --noconfirm fish
+            git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
+            ~/.local/share/caelestia/install.fish
             break
             ;;
         5) 
@@ -54,6 +53,7 @@ while true; do
             echo ""
             ;;
     esac
+    
 done
 cd ..
 rm -rf Arch
