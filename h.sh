@@ -16,7 +16,8 @@ while true; do
     echo "Escolha a dot:"
     echo "1) IA"
     echo "2) JaKooLit" 
-    echo "3) Sair"
+    echo "3) Hyde" 
+    echo "4) Sair"
     read -p "Opção (1/2/3): " choice
 
     case $choice in
@@ -29,6 +30,12 @@ while true; do
             break
             ;;
         3) 
+            sudo pacman -S --needed git base-devel
+            git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+            cd ~/HyDE/Scripts
+            ./install.sh
+            ;;
+        4) 
             echo "Saindo..."
             exit 0
             ;;
