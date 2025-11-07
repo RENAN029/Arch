@@ -35,7 +35,8 @@ while true; do
             break
             ;;
         4) 
-            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
+            sudo pacman -S yay
+            yay caelestia-shell
             break
             ;;
         5) 
