@@ -1,4 +1,5 @@
 set -e
+
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
@@ -11,16 +12,17 @@ systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
 echo "=== Instalador de Dots Hyprland ==="
+
 while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
     echo "2) JaKooLit" 
-    echo "3) Ia1" 
+    echo "3) Hyde" 
     echo "4) Caelestia"
-    echo "5) Ia2"
+    echo "5) Ia"
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
-    case $choice in
+    case $choice in 
     
         1) 
             curl -fsSL https://install.danklinux.com | sh
@@ -31,7 +33,10 @@ while true; do
             break
             ;;
         3) 
-            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
+            sudo pacman -S --needed git base-devel
+            git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+            cd ~/HyDE/Scripts
+            ./install.sh
             break
             ;;
         4) 
@@ -52,9 +57,9 @@ while true; do
             echo "Opção inválida! Tente novamente."
             echo ""
             ;;
-    esac
-    
+    esac    
 done
+
 cd ..
 rm -rf Arch
 echo "Pasta Arch removida!"
