@@ -11,13 +11,12 @@ systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
 echo "=== Instalador de Dots Hyprland ==="
-
 while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
     echo "2) JaKooLit" 
     echo "3) M4" 
-    echo "4) Sh1zicus"
+    echo "4) Caelestia"
     echo "5) HyDe"
     echo "6) Sair"
     read -p "Opção (1/2/3): " choice
