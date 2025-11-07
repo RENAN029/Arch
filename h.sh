@@ -12,7 +12,6 @@ systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
 echo "=== Instalador de Dots Hyprland ==="
-
 while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
@@ -23,7 +22,6 @@ while true; do
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
     case $choice in 
-    
         1) 
             curl -fsSL https://install.danklinux.com | sh
             break
@@ -33,10 +31,7 @@ while true; do
             break
             ;;
         3) 
-            sudo pacman -S --needed git base-devel
-            git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-            cd ~/HyDE/Scripts
-            ./install.sh
+            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
             break
             ;;
         4) 
