@@ -31,7 +31,7 @@ while true; do
             break
             ;;
         3) 
-            sudo pacman -S fish
+            sudo pacman -S --noconfirm fish
             git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
             ~/.local/share/caelestia/install.fish
             break
