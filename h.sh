@@ -1,5 +1,5 @@
 #!/bin/bash
-
+flatpak install flathub io.github.kolunmi.Bazaar
 echo "=== Instalador de Dots Hyprland ==="
 
 while true; do
