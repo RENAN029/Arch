@@ -17,7 +17,8 @@ while true; do
     echo "1) IA"
     echo "2) JaKooLit" 
     echo "3) Hyde" 
-    echo "4) Sair"
+    echo "4) M4"
+    echo "5) Sair"
     read -p "Opção (1/2/3): " choice
 
     case $choice in
@@ -30,12 +31,16 @@ while true; do
             break
             ;;
         3) 
+            bash <(curl -L https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles.dotinst)
+            break
+            ;;
+        4) 
             sudo pacman -S --needed git base-devel
             git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
             cd ~/HyDE/Scripts
             ./install.sh
             ;;
-        4) 
+        5) 
             echo "Saindo..."
             exit 0
             ;;
