@@ -15,12 +15,11 @@ echo "=== Instalador de Dots Hyprland ==="
 while true; do
     echo "Escolha a dot:"
     echo "1) IA"
-    echo "2) Binary"
-    echo "3) JaKooLit" 
-    echo "4) M4" 
-    echo "5) Sh1zicus"
-    echo "6) HyDe"
-    echo "7) Sair"
+    echo "2) JaKooLit" 
+    echo "3) M4" 
+    echo "4) Sh1zicus"
+    echo "5) HyDe"
+    echo "6) Sair"
     read -p "Opção (1/2/3): " choice
     case $choice in
         1) 
@@ -28,28 +27,24 @@ while true; do
             break
             ;;
         2) 
-            curl -fsSL -o install.sh https://raw.githubusercontent.com/BinaryHarbinger/binarydots/main/install.sh && chmod +x install.sh && ./install.sh
-            break
-            ;;
-        3) 
             sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)
             break
             ;;
-        4) 
+        3) 
             bash <(curl -L https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles.dotinst)
             break
             ;;
-        5) 
+        4) 
             bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
             break
             ;;
-        6) 
+        5) 
             sudo pacman -S --needed git base-devel
             git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
             cd ~/HyDE/Scripts
             ./install.sh
             ;;
-        7) 
+        6) 
             echo "Saindo..."
             exit 0
             ;;
