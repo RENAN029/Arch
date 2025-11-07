@@ -16,11 +16,10 @@ while true; do
     echo "1) Dank"
     echo "2) JaKooLit" 
     echo "3) Caelestia" 
-    echo "4) Ia1"
-    echo "5) Ia2"
+    echo "4) Hyde"
+    echo "5) Ia"
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
-
     case $choice in
         1) 
             curl -fsSL https://install.danklinux.com | sh
@@ -37,11 +36,12 @@ while true; do
             break
             ;;
         4) 
-            bash <(curl -s https://ii.clsty.link/get)
-            break
+            curl -L https://raw.githubusercontent.com/HyDE-Project/HyDE/main/Scripts/hydevm/hydevm.sh -o hydevm
+            chmod +x hydevm
+            ./hydevm
             ;;
         5) 
-            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
+            bash <(curl -s https://ii.clsty.link/get)
             break
             ;;
         6) 
