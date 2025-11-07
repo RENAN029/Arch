@@ -9,6 +9,7 @@ sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -S --noconfirm nvidia-open intel-ucode ufw fwupd gamemode fuse apparmor flatpak earlyoom
+systemctl enable apparmor earlyoom
 
 flatpak install flathub io.github.kolunmi.Bazaar
 echo "=== Instalador de Dots Hyprland ==="
