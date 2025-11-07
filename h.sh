@@ -23,7 +23,10 @@ while true; do
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5): " choice
     case $choice in
-    
+         0) 
+            curl -fsSL -o install.sh https://raw.githubusercontent.com/BinaryHarbinger/binarydots/main/install.sh && chmod +x install.sh && ./install.sh
+            break
+            ;;
         1) 
             curl -fsSL https://install.danklinux.com | sh
             break
