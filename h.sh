@@ -1,5 +1,4 @@
 set -e
-
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
@@ -21,6 +20,7 @@ while true; do
     echo "5) Ia2"
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
+
     case $choice in
         1) 
             curl -fsSL https://install.danklinux.com | sh
