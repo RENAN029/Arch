@@ -12,7 +12,6 @@ systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
 echo "=== Instalador de Dots Hyprland ==="
-
 while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
@@ -23,7 +22,6 @@ while true; do
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
     case $choice in
-    
         1) 
             curl -fsSL https://install.danklinux.com | sh
             break
@@ -33,7 +31,9 @@ while true; do
             break
             ;;
         3) 
-            bash <(curl -L https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles.dotinst)
+            sudo pacman -S fish
+            git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
+            ~/.local/share/caelestia/install.fish
             break
             ;;
         4) 
