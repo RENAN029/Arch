@@ -34,8 +34,8 @@ while true; do
             break
             ;;
         4) 
-            sudo pacman -S yay
-            yay caelestia-shell
+            sudo pacman -S --noconfirm  yay
+            yay --noconfirm  caelestia-shell
             break
             ;;
         5) 
