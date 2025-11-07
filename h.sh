@@ -18,29 +18,33 @@ while true; do
     echo "2) JaKooLit" 
     echo "3) Hyde" 
     echo "4) M4"
-    echo "5) Sair"
+    echo "5) Binary"
+    echo "6) Sair"
     read -p "Opção (1/2/3): " choice
-
     case $choice in
         1) 
             bash <(curl -s https://ii.clsty.link/get)
             break
             ;;
         2) 
-            sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)
+            curl -fsSL -o install.sh https://raw.githubusercontent.com/BinaryHarbinger/binarydots/main/install.sh && chmod +x install.sh && ./install.sh
             break
             ;;
         3) 
-            bash <(curl -L https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles.dotinst)
+            sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)
             break
             ;;
         4) 
+            bash <(curl -L https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles.dotinst)
+            break
+            ;;
+        5) 
             sudo pacman -S --needed git base-devel
             git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
             cd ~/HyDE/Scripts
             ./install.sh
             ;;
-        5) 
+        6) 
             echo "Saindo..."
             exit 0
             ;;
@@ -51,7 +55,6 @@ while true; do
     esac
 done
 
-# Auto-remoção
 cd ..
 rm -rf Arch
 echo "Pasta Arch removida!"
