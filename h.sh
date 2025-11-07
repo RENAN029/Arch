@@ -21,7 +21,7 @@ while true; do
     echo "4) Ia1"
     echo "5) Ia2"
     echo "6) Sair"
-    read -p "Opção (1/2/3): " choice
+    read -p "Opção (1/2/3/4/5): " choice
     case $choice in
     
         1) 
