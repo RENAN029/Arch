@@ -16,7 +16,7 @@ while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
     echo "2) JaKooLit" 
-    echo "3) M4" 
+    echo "3) Caelestia" 
     echo "4) Ia1"
     echo "5) Ia2"
     echo "6) Sair"
