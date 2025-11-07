@@ -39,6 +39,7 @@ while true; do
             curl -L https://raw.githubusercontent.com/HyDE-Project/HyDE/main/Scripts/hydevm/hydevm.sh -o hydevm
             chmod +x hydevm
             ./hydevm
+            break
             ;;
         5) 
             bash <(curl -s https://ii.clsty.link/get)
@@ -54,7 +55,6 @@ while true; do
             ;;
     esac
 done
-
 cd ..
 rm -rf Arch
 echo "Pasta Arch removida!"
