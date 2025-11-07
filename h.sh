@@ -18,8 +18,8 @@ while true; do
     echo "1) Dank"
     echo "2) JaKooLit" 
     echo "3) M4" 
-    echo "4) Caelestia"
-    echo "5) HyDe"
+    echo "4) Ia1"
+    echo "5) Ia2"
     echo "6) Sair"
     read -p "Opção (1/2/3): " choice
     case $choice in
@@ -37,11 +37,11 @@ while true; do
             break
             ;;
         4) 
-
+            bash <(curl -s https://ii.clsty.link/get)
             break
             ;;
         5) 
-
+            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
             break
             ;;
         6) 
