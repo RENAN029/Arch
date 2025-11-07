@@ -6,7 +6,7 @@ sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mi
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 sudo pacman -Syu --noconfirm 
 sudo pacman -S --noconfirm nvidia-open intel-ucode ufw fwupd gamemode fuse apparmor flatpak earlyoom
-flatpak install flathub io.github.kolunmi.Bazaar
+flatpak install -y flathub io.github.kolunmi.Bazaar
 systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
