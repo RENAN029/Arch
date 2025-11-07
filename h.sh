@@ -15,9 +15,9 @@ while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
     echo "2) JaKooLit" 
-    echo "3) Caelestia" 
-    echo "4) Hyde"
-    echo "5) Ia"
+    echo "3) Ia1" 
+    echo "4) Caelestia"
+    echo "5) Ia2"
     echo "6) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice
     case $choice in
