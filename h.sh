@@ -14,7 +14,7 @@ echo "=== Instalador de Dots Hyprland ==="
 
 while true; do
     echo "Escolha a dot:"
-    echo "1) ii.clsty.link"
+    echo "1) IA"
     echo "2) JaKooLit" 
     echo "3) Sair"
     read -p "Opção (1/2/3): " choice
