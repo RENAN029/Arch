@@ -1,5 +1,4 @@
 set -e
-
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
@@ -12,12 +11,11 @@ systemctl enable apparmor earlyoom
 sudo pacman -Scc --noconfirm
 
 echo "=== Instalador de Dots Hyprland ==="
-
 while true; do
     echo "Escolha a dot:"
     echo "1) Dank"
     echo "2) JaKooLit" 
-    echo "3) Hyde" 
+    echo "3) Binary" 
     echo "4) Caelestia"
     echo "5) Ia"
     echo "6) Sair"
@@ -33,10 +31,7 @@ while true; do
             break
             ;;
         3) 
-            sudo pacman -S --needed git base-devel
-            git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
-            cd ~/HyDE/Scripts
-            ./install.sh
+            curl -fsSL -o install.sh https://raw.githubusercontent.com/BinaryHarbinger/binarydots/main/install.sh && chmod +x install.sh && ./install.sh
             break
             ;;
         4) 
