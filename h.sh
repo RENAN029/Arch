@@ -8,7 +8,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm nvidia-open intel-ucode ufw fwupd gamemode fuse apparmor flatpak earlyoom
 flatpak install -y flathub io.github.kolunmi.Bazaar
 systemctl enable apparmor earlyoom
-sudo pacman -Scc --noconfirm
+
 echo "=== Instalador de Dots Hyprland ==="
 while true; do
     echo "Escolha a dot:"
