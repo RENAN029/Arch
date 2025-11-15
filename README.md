@@ -1,4 +1,3 @@
-set -e
 git clone https://github.com/RENAN029/Arch.git
 
 cd Arch
@@ -14,7 +13,3 @@ sudo pacman -Scc
 sudo pacman -Syu $(pacman -Qnq) 
 
 sudo pacman -Rsnu $(pacman -Qdtq)
-
-sudo pacman -S 
-
-sudo pacman -Rsnu
