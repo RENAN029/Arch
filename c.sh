@@ -1,6 +1,6 @@
 set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-player gparted
 sudo pacman -S --noconfirm nvidia-open intel-ucode git micro fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom vscodium 
 
@@ -23,7 +23,7 @@ sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 
-echo "==> nix; pikaur; ffmpegthumbnailer; cups; pnpm; docker; topgrade; oh-my-bash; gnome-keyring; gnome-system-monitor"
+echo "==> zen; gimp; lutris; hydralauncher; prismlauncher; steam; kdenlive; protonplus; onlyoffice; localsend; vscodium"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 cd ..
