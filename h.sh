@@ -7,8 +7,9 @@ while true; do
     echo "3) Hyde" 
     echo "4) Caelestia"
     echo "5) Ia"
-    exho "6) Ax"
-    echo "7) Sair"
+    echo "6) Ax"
+    exho "7) Ia2"
+    echo "8) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice   
     case $choice in 
         1) 
@@ -40,7 +41,11 @@ while true; do
             curl -fsSL get.axeni.de/ax-shell | bash
             break
             ;;
-        7) 
+        7)
+            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
+            break
+            ;;
+        8) 
             echo "Saindo..."
             exit 0
             ;;
