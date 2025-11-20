@@ -7,7 +7,8 @@ while true; do
     echo "3) Hyde" 
     echo "4) Caelestia"
     echo "5) Ia"
-    echo "6) Sair"
+    exho "6) Ax"
+    echo "7) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice   
     case $choice in 
         1) 
@@ -35,7 +36,11 @@ while true; do
             bash <(curl -s https://ii.clsty.link/get)
             break
             ;;
-        6) 
+        6)
+            curl -fsSL get.axeni.de/ax-shell | bash
+            break
+            ;;
+        7) 
             echo "Saindo..."
             exit 0
             ;;
