@@ -8,7 +8,7 @@ while true; do
     echo "4) Caelestia"
     echo "5) Ia"
     echo "6) Ax"
-    exho "7) Ia2"
+    exho "7) Ml4"
     echo "8) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice   
     case $choice in 
@@ -42,7 +42,7 @@ while true; do
             break
             ;;
         7)
-            bash <(curl -s "https://sh1zicus.github.io/dots-hyprland-wiki/setup.sh")
+            bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/hyprland-dotfiles-stable.dotinst)
             break
             ;;
         8) 
