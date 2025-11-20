@@ -8,7 +8,7 @@ while true; do
     echo "4) Caelestia"
     echo "5) Ia"
     echo "6) Ax"
-    exho "7) Ml4"
+    echo "7) Ml4"
     echo "8) Sair"
     read -p "Opção (1/2/3/4/5/6): " choice   
     case $choice in 
