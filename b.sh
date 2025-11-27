@@ -11,7 +11,7 @@ sudo ufw allow 1714:1764/tcp
 sudo ufw reload
 
 git clone https://github.com/psygreg/shader-patcherx.git
-cd shader-patcherx
+cd shader-patcherx 
 chmod +x patcher.sh
 ./patcher.sh
 
