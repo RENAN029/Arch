@@ -6,10 +6,10 @@ chmod +x b.sh
 
 ./b.sh
 
-sudo pacman -Syu  
-
 sudo pacman -Scc
 
 sudo pacman -Syu $(pacman -Qnq) 
+
+sudo pacman -S bat eza tldr ncdu
 
 sudo pacman -Rsnu $(pacman -Qdtq)
