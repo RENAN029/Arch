@@ -26,5 +26,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 echo "==> zen; gimp; lutris; hydralauncher; prismlauncher; steam; kdenlive; protonplus; onlyoffice; localsend; vscodium"
+echo "==> helium; gearlever; flatseal; 
 cd ..
 rm -rf Arch
