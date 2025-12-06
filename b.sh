@@ -19,7 +19,7 @@ sudo pacman -Syu --noconfirm
 echo "curl -fsSL https://install.danklinux.com | sh"
 echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
 echo "bash <(curl -s https://ii.clsty.link/get)"
-echo "curl -fsSL get.axeni.de/ax-shell | bash"
+echo "git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE"
 echo "FIM"
 cd ..
 rm -rf Arch
