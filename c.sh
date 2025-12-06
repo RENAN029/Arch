@@ -22,7 +22,6 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 echo "==> zen; gimp; lutris; hydralauncher; prismlauncher; steam; kdenlive; protonplus; onlyoffice; localsend; vscodium"
