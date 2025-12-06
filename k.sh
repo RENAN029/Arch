@@ -21,10 +21,10 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-echo "==> plasma-vault; plasma-systemmonitor; plasma-thunderbolt; oxygen; print-manager; ffmpegthumbs; dolphin-plugins"
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
+echo "==> plasma-vault; plasma-systemmonitor; plasma-thunderbolt; oxygen; print-manager; ffmpegthumbs; dolphin-plugins"
 cd ..
 rm -rf Arch
