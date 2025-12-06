@@ -3,7 +3,7 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm cosmic-session cosmic-files cosmic-store cosmic-terminal cosmic-text-editor cosmic-player bat 
 sudo pacman -S --noconfirm nvidia-open intel-ucode nvim btop ufw fwupd flatpak yt-dlp aria2 earlyoom fastfetch git ncdu 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
 systemctl enable cosmic-greeter earlyoom dnsmasq apparmor
