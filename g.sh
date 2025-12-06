@@ -22,9 +22,9 @@ sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
-echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; fd"
-echo "==> nix; yay; ffmpegthumbnailer; cups; pnpm; docker; topgrade; gamescope; clamav; starship; gnome-system-monitor"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
+echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; fd"
+echo "==> nix; yay; ffmpegthumbnailer; cups; pnpm; docker; topgrade; gamescope; clamav; starship; gnome-system-monitor"
 cd ..
 rm -rf Arch
