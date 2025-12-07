@@ -18,8 +18,8 @@ sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 echo "curl -fsSL https://install.danklinux.com | sh"
 echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
+echo "Lunarvim; Astrovim; Nvchad; HydeDots; Kickstart"
 echo "bash <(curl -s https://ii.clsty.link/get)"
-echo "git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE"
 echo "FIM"
 cd ..
 rm -rf Arch
