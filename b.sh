@@ -17,8 +17,8 @@ rm -rf shader-patcherx
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 echo "curl -fsSL https://install.danklinux.com | sh"
+echo "sudo pacman -S zoxide; bat; net-tools; bind"
 echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
-echo "https://library.hydra.wiki/library"
 echo "bash <(curl -s https://ii.clsty.link/get)"
 echo "FIM"
 cd ..
