@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git nvim fastfetch btop gufw fwupd flatpak yt-dlp aria2 earlyoom
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
-git clone https://github.com/maximilionus/lucidglyph.git
+git clone https://github.com/maximilionus/lucidglyph.git 
 systemctl enable gdm earlyoom dnsmasq apparmor
 cd lucidglyph
 sudo ./lucidglyph.sh install
