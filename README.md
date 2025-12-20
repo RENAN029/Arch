@@ -6,10 +6,10 @@ chmod +x b.sh
 
 ./b.sh
 
+sudo pacman -S
+
 sudo pacman -Scc
 
 sudo pacman -Syu $(pacman -Qnq) 
-
-sudo pacman -S duf eza tldr drill
 
 sudo pacman -Rsnu $(pacman -Qdtq)
