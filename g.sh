@@ -3,7 +3,6 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git 
 systemctl enable gdm earlyoom dnsmasq apparmor
@@ -11,8 +10,6 @@ cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
