@@ -1,5 +1,4 @@
 set -e
-
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm cosmic-session cosmic-files cosmic-store cosmic-terminal xdg-user-dirs smartmontools git ncdu
@@ -11,6 +10,7 @@ systemctl enable cosmic-greeter earlyoom dnsmasq apparmor
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
+rm -rf lucidglyph
 
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
