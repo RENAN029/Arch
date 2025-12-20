@@ -23,3 +23,4 @@ echo "bash <(curl -s https://ii.clsty.link/get)"
 echo "FIM"
 cd ..
 rm -rf Arch
+ 
