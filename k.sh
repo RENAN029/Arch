@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak-kcm yt-dlp aria2 earlyoom  
 sudo pacman -S --noconfirm sddm-kcm ark dolphin konsole discover kscreen partitionmanager kdeconnect bluedevil spectacle 
 sudo pacman -S --noconfirm plasma-desktop plasma-nm plasma-pa plasma-browser-integration plasma-firewall kde-gtk-config  
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" 
+
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
 systemctl enable sddm earlyoom apparmor
@@ -12,8 +12,7 @@ cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
 rm -rf lucidglyph
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
+
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
 sudo pacman-key --lsign-key 3056513887B78AEB
 sudo pacman -U --noconfirm "https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst"
@@ -23,6 +22,7 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
 echo "==> plasma-vault; plasma-systemmonitor; plasma-thunderbolt; oxygen; print-manager; ffmpegthumbs; dolphin-plugins"
