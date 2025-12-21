@@ -8,6 +8,7 @@ sudo ufw allow 53317/tcp
 sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
 sudo ufw reload
+
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx 
 chmod +x patcher.sh
@@ -17,8 +18,12 @@ rm -rf shader-patcherx
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
+
+
+
 sudo ufw status
 echo "NVIM, FIM"
 cd ..
