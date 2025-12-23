@@ -1,4 +1,5 @@
 set -e
+
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm nvidia-open intel-ucode neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom openssh
@@ -24,7 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> zen; gimp; lutris; hydralauncher; prismlauncher; steam; kdenlive; protonplus; onlyoffice; localsend; vscodium"
-echo "==> helium; flatseal; gearlevel; handbrake; obs; blender; audacity; obsidian; sober; darktable; inkscape; foliate"          
+echo "==> nix; yay; ffmpegthumbnailer; cups; pnpm; docker; topgrade; gamescope; clamav; starship; gnome-system-monitor"         
 cd ..
 rm -rf Arch
