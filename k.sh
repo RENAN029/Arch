@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm plasma-meta kdeconnect konsole dolphin partitionmanag
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable sddm earlyoom apparmor
+systemctl enable sddm earlyoom dnsmasq apparmor
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
