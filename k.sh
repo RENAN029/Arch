@@ -25,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> plasma-vault; plasma-systemmonitor; plasma-thunderbolt; drkonqi; plasma-disks; ffmpegthumbs; dolphin-plugins"
+echo "==> plasma-vault; plasma-systemmonitor; plasma-disks; kdeplasma-addons; drkonqi; ffmpegthumbs; dolphin-plugins"
 cd ..
 rm -rf Arch
