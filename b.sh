@@ -1,7 +1,7 @@
 set -e
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo systemctl enable ufw 
+sudo systemctl enable ufw  
 sudo ufw enable
 sudo ufw allow 53317/udp
 sudo ufw allow 53317/tcp
