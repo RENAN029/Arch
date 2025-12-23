@@ -24,7 +24,7 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; fd"
+echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; bc"
 echo "==> nix; yay; ffmpegthumbnailer; cups; pnpm; docker; topgrade; gamescope; clamav; starship; gnome-system-monitor"
 cd ..
 rm -rf Arch
