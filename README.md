@@ -6,10 +6,10 @@ chmod +x b.sh
 
 ./b.sh
 
-sudo pacman -S plasma-browser-integration
+sudo pacman -S 
 
-do pacman -Scc krd ksshaskpass kwallet-pam
+do pacman -Scc 
 
-sudo pacman -Syu $(pacman -Qnq) kwrited
+sudo pacman -Syu $(pacman -Qnq) 
 
-sudo pacman -Rsnu $(pacman -Qdtq) primter
+sudo pacman -Rsnu $(pacman -Qdtq) 
