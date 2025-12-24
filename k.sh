@@ -5,9 +5,9 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm ark nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom  
 sudo pacman -S --noconfirm plasma-meta kdeconnect konsole dolphin partitionmanager ffmpegthumbs dolphin-plugins sweeper 
 
-sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor
+sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor ananicy-cpp
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable sddm earlyoom dnsmasq apparmor
+systemctl enable sddm earlyoom dnsmasq apparmor ananicy-cpp
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
