@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "==> nix; yay; ananicy-cpp; pnpm; cups; irqbalance; mangohud; gamescope; clamav; starship; distrobox; docker; iwd"        
 cd ..
-rm -rf Arch
+rm -rf MISE
