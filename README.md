@@ -1,6 +1,6 @@
-git clone https://github.com/RENAN029/Arch.git
+git clone https://github.com/RENAN029/MISE.git
 
-cd Arch
+cd MISE
 
 chmod +x b.sh
 
