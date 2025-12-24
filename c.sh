@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm cosmic-session cosmic-terminal cosmic-files cosmic-st
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor ananicy-cpp 
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable cosmic-greeter earlyoom dnsmasq apparmor ananicy-cpp docker
+systemctl enable cosmic-greeter earlyoom dnsmasq apparmor ananicy-cpp 
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
