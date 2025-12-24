@@ -27,4 +27,4 @@ echo "bash <(curl -s https://ii.clsty.link/get)"
 sudo ufw status
 echo "FIM"
 cd ..
-rm -rf Arch
+rm -rf MISE
