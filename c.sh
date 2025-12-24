@@ -5,9 +5,9 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm cosmic-session cosmic-terminal cosmic-files cosmic-store xdg-user-dirs smartmontools git ncdu
 sudo pacman -S --noconfirm nvidia-open intel-ucode neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom docker 
 
-sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor ananicy-cpp 
+sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor ananicy-cpp docker 
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable cosmic-greeter earlyoom dnsmasq apparmor ananicy-cpp
+systemctl enable cosmic-greeter earlyoom dnsmasq apparmor ananicy-cpp docker
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
