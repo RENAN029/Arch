@@ -25,6 +25,6 @@ echo "curl -fsSL https://install.danklinux.com | sh"
 echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
 echo "bash <(curl -s https://ii.clsty.link/get)"
 sudo ufw status
-echo "NVIM, FIM"
+echo "ananicy-cpp"
 cd ..
 rm -rf Arch
