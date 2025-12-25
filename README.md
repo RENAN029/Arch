@@ -1,6 +1,6 @@
 git clone https://github.com/RENAN029/MISE.git
 
-cd TAILSCALE
+cd iwd
 
 chmod +x b.sh
 
