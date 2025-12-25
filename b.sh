@@ -20,11 +20,11 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
-echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
-echo "bash <(curl -s https://ii.clsty.link/get) || curl -fsSL https://install.danklinux.com | sh"
 echo "fish superfile ffmpegthumbnailer eza fzf zoxide bat tldr ncdu duf ldns fd ripgrep" 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "FIM"
+fastfetch
+sudo ufw status
+echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
 cd ..
 rm -rf iwd
