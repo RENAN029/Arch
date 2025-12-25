@@ -20,7 +20,7 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
-echo "fish superfile ffmpegthumbnailer eza fzf zoxide bat tldr ncdu duf ldns fd ripgrep" 
+echo "fish; superfile; ffmpegthumbnailer; eza; fzf; zoxide; bat; tldr; ncdu; duf; ldns; fd; ripgrep" 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 fastfetch
