@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "==> Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell; bc"
 cd ..
-rm -rf MISE
+rm -rf TAILSCALE
