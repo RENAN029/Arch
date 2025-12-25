@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "==> nix; yay; ananicy-cpp; clamav; irqbalance; pnpm; mise; cups; mangohud; gamescope; tailscale; distrobox; docker"       
 cd ..
-rm -rf TAILSCALE
+rm -rf iwd
