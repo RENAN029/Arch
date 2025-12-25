@@ -1,5 +1,4 @@
 set -e
-
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw  
@@ -8,8 +7,6 @@ sudo ufw allow 53317/udp
 sudo ufw allow 53317/tcp
 sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
-sudo ufw reload
-sudo ufw status
 
 git clone https://github.com/psygreg/shader-patcherx.git
 cd shader-patcherx 
@@ -23,8 +20,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
  
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "curl -fsSL https://install.danklinux.com | sh; zsh; tailscale; hyprland; "
-echo "fish; superfile; ffmpegthumbnailer; eza; fzf; zoxide; bat; tldr; ncdu; duf; ldns; fd; ripgrep"
 echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
 cd ..
 rm -rf iwd
