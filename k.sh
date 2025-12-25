@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "==> https://library.hydra.wiki/library; https://github.com/psygreg/linuxtoys; https://github.com/imputnet/helium"
 cd ..
-rm -rf TAILSCALE
+rm -rf iwd
