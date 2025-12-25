@@ -25,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-echo "==> nix; yay; ananicy-cpp; clamav; irqbalance; pnpm; mise; cups; mangohud; gamescope; starship; distrobox; docker"       
+echo "sudo pacman -S nix yay ananicy-cpp clamav irqbalance pnpm mise cups mangohud gamescope starship distrobox docker"       
 cd ..
 rm -rf iwd
