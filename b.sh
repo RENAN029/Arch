@@ -25,6 +25,6 @@ sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 fastfetch
 sudo ufw status
-echo "FIM"
+echo "ffmpegthumbnailer"
 cd ..
 rm -rf iwd
