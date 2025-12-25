@@ -17,9 +17,9 @@ rm -rf shader-patcherx
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
- 
+sudo pacman -S ffmpegthumbnailer fish superfile eza fzf zoxide bat tldr duf ldns fd ripgrep tailscale
+
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
-echo "sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)"
 cd ..
 rm -rf iwd
