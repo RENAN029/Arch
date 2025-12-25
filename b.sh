@@ -1,4 +1,5 @@
 set -e
+
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo systemctl enable ufw  
@@ -21,5 +22,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
+echo "FIM"
 cd ..
 rm -rf iwd
