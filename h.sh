@@ -1,13 +1,13 @@
 set -e
 
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
-sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
-sudo pacman -S --noconfirm ly nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
-sudo pacman -S --noconfirm fish superfile xdg-user-dirs eza fzf zoxide bat tldr ncdu duf ldns fd ripgrep tailscale mise
+sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
+sudo pacman -S --noconfirm nvidia-open intel-ucode neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom git gdu 
+sudo pacman -S --noconfirm 
 
-sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor  
-git clone https://github.com/maximilionus/lucidglyph.git 
-systemctl enable ly earlyoom dnsmasq apparmor 
+sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
+git clone https://github.com/maximilionus/lucidglyph.git
+systemctl enable cosmic-greeter earlyoom dnsmasq apparmor 
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
@@ -25,6 +25,6 @@ echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee
 
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
-curl -fsSL https://install.danklinux.com | sh
+echo "sudo pacman -S nix yay ananicy-cpp clamav irqbalance pnpm mise cups mangohud gamescope tailscale distrobox docker"     
 cd ..
 rm -rf iwd
