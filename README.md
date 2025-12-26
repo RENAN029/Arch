@@ -8,7 +8,7 @@ chmod +x b.sh
 
 do pacman -Scc 
 
-sudo pacman -S httpie fisher wget 
+sudo pacman -S 
 
 sudo pacman -Syu $(pacman -Qnq) 
 
