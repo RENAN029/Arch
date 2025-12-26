@@ -6,9 +6,9 @@ chmod +x b.sh
 
 ./b.sh
 
-sudo pacman -S 
-
 do pacman -Scc 
+
+sudo pacman -S httpie fisher 
 
 sudo pacman -Syu $(pacman -Qnq) 
 
