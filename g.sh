@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer 
 sudo pacman -S --noconfirm gnome-shell gnome-console gnome-software gnome-tweaks gnome-control-center gnome-disk-utility 
 sudo pacman -S --noconfirm gdm nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
-echo "Dash to Dock; AppIndicator and KStatusNotifierItem; Support GSConnect; Clipboard Indicator; Blur my Shell"
+echo "Dash to Dock; AppIndicator and KStatusNotifierItem Support; GSConnect; Clipboard Indicator; Blur my Shell"
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor  
 git clone https://github.com/maximilionus/lucidglyph.git 
 systemctl enable gdm earlyoom dnsmasq apparmor 
