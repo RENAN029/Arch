@@ -8,7 +8,7 @@ chmod +x b.sh
 
 do pacman -Scc 
 
-sudo pacman -S 
+sudo pacman -S wget nano vim
 
 sudo pacman -Syu $(pacman -Qnq) 
 
