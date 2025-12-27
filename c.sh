@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "sudo pacman -S nix yay ananicy-cpp clamav irqbalance cups pnpm mise mangohud distrobox docker tailscale httpie iwd"     
 cd ..
-rm -rf iwd
+rm -rf jq
