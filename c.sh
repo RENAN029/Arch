@@ -7,7 +7,7 @@ sudo pacman -S --noconfirm cosmic-session cosmic-terminal cosmic-files cosmic-st
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
-systemctl enable cosmic-greeter earlyoom dnsmasq apparmor 
+systemctl enable cosmic-greeter earlyoom dnsmasq apparmor tailscaled 
 cd lucidglyph
 sudo ./lucidglyph.sh install
 cd ..
