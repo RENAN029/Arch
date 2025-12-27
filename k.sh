@@ -4,7 +4,7 @@ sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-n
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm ark nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom  
 sudo pacman -S --noconfirm plasma-meta kdeconnect konsole dolphin partitionmanager ffmpegthumbs dolphin-plugins sweeper 
-echo "sudo pacman -S zerotier-one smartmontools openssh wpa_supplicant xdg-utils fish fisher starship difftastic delta"
+
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
 systemctl enable sddm earlyoom dnsmasq apparmor 
@@ -22,7 +22,7 @@ sudo sed -i '/Color/a ILoveCandy' /etc/pacman.conf
 sudo sed -i '/^ParallelDownloads/d' /etc/pacman.conf
 sudo sed -i '/ILoveCandy/a ParallelDownloads = 15' /etc/pacman.conf
 echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
-
+echo "sudo pacman -S zerotier-one smartmontools openssh wpa_supplicant xdg-utils fish fisher starship difftastic delta"
 echo "sudo pacman -S ffmpegthumbnailer wpa_supplicant zerotier-one xdg-utils fish fisher starship ldns tldr"
 sudo pacman -Syu --noconfirm 
 sudo pacman -Scc --noconfirm
