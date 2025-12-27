@@ -27,4 +27,4 @@ sudo pacman -Syu --noconfirm
 sudo pacman -Scc --noconfirm
 echo "sudo pacman -S zerotier-one smartmontools openssh wpa_supplicant xdg-utils fish fisher starship git-delta lazygit"
 cd ..
-rm -rf iwd
+rm -rf jq
