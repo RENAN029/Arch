@@ -6,7 +6,7 @@ chmod +x b.sh
 
 ./b.sh
 
-do pacman -Scc 
+sudo pacman -Scc 
 
 sudo pacman -S wget nano vim htop
 
