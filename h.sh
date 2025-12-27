@@ -5,6 +5,7 @@ sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-
 sudo pacman -S --noconfirm gdu nvidia-open intel-ucode git neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom
 sudo pacman -S --noconfirm ripgrep zoxide ldns tldr fzf eza duf bat fd choose procs gping mcfly sd rustscan fish fisher
 sudo pacman -S --noconfirm iwd smartmontools openssh wpa_supplicant xdg-utils starship git-delta lazygit difftastic dust 
+sudo pacman -S --noconfirm github-cli pass stow
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
