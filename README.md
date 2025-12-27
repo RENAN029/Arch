@@ -6,7 +6,7 @@ chmod +x b.sh
 
 ./b.sh
 
-sudo pacman -Scc 
+sudo pacman -Scc ffmpegthumbnailer 
 
 sudo pacman -S wget nano vim htop
 
