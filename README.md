@@ -8,7 +8,7 @@ chmod +x b.sh
 
 sudo pacman -Scc ffmpegthumbnailer 
 
-sudo pacman -S fish fisher starship
+sudo pacman -S wget htop nano vim
 
 sudo pacman -Syu $(pacman -Qnq) 
 
