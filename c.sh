@@ -3,7 +3,7 @@ set -e
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-noto-nerd noto-fonts-extra ttf-jetbrains-mono
 sudo pacman -S --noconfirm ffmpeg gst-plugins-ugly gst-plugins-good gst-plugins-base gst-plugins-bad gst-libav gstreamer
 sudo pacman -S --noconfirm nvidia-open intel-ucode neovim fastfetch btop ufw fwupd flatpak yt-dlp aria2 earlyoom git gdu 
-sudo pacman -S --noconfirm cosmic-session cosmic-terminal cosmic-files cosmic-store xdg-user-dirs gnome-keyring 
+sudo pacman -S --noconfirm cosmic-session cosmic-terminal cosmic-files cosmic-store xdg-user-dirs gnome-keyring tailscale
 
 sudo pacman -S --noconfirm gamemode fuse dnsmasq apparmor 
 git clone https://github.com/maximilionus/lucidglyph.git
