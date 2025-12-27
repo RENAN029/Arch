@@ -22,4 +22,4 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 sudo pacman -Scc --noconfirm
 sudo pacman -Syu --noconfirm
 cd ..
-rm -rf iwd
+rm -rf jq
